@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Roboto Condensed",
     fontWeight: 400,
     padding: "1rem 3rem",
-    transition: "all 0.5s",
     outline: "none",
 
     "&:hover": {

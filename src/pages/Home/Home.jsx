@@ -125,6 +125,8 @@ const Home = () => {
   React.useEffect(() => {
     dispatch(showCompletedTodoAction());
     dispatch(showUncompletedTodoAction());
+
+    // eslint-disable-next-line
   }, [updateTodo.loading]);
 
   return (

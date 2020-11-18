@@ -124,6 +124,8 @@ const TodoModel = ({ singleTodo, closeModel }) => {
       };
 
       array.push(obj);
+
+      return null;
     });
 
     return array;

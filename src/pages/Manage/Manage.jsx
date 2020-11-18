@@ -14,7 +14,6 @@ import {
   getAllTodosAction,
   deleteTodoAction,
   getSingleTodoAction,
-  updateTodoAction,
 } from "../../redux/actions/todo";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -106,6 +105,8 @@ const Manage = () => {
 
   React.useEffect(() => {
     dispatch(getAllTodosAction());
+
+    // eslint-disable-next-line
   }, [deleteTodo.loading, updateTodo.loading]);
 
   // Model States
@@ -169,7 +170,10 @@ const Manage = () => {
                           singleTodo.todo.todo && (
                             <>
                               {openModel && (
-                                <TodoModel closeModel={handleCloseModel} singleTodo={singleTodo} />
+                                <TodoModel
+                                  closeModel={handleCloseModel}
+                                  singleTodo={singleTodo}
+                                />
                               )}
                             </>
                           )}

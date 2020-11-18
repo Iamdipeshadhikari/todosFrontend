@@ -127,6 +127,8 @@ const ProfileBar = () => {
 
   React.useEffect(() => {
     dispatch(getUserProfileAction());
+
+    // eslint-disable-next-line
   }, []);
 
   const handleDeleteAccount = () => {
@@ -210,6 +212,8 @@ const ProfileBar = () => {
                       </a>
                     </li>
                   );
+                } else {
+                  return null;
                 }
               })}
         </ul>
