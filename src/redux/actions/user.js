@@ -28,7 +28,7 @@ const signInAction = (data) => async (dispatch) => {
 
   try {
     const res = await axios.post(
-      `${process.env.REACT_APP_API_URL}auth/login`,
+      `https://shielded-beyond-24533.herokuapp.com/auth/login`,
       data
     );
 
